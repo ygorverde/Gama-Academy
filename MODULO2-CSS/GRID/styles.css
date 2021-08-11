@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "head head"
+                        "menu main"
+    ;
+    height: 100vh;
+}
+
+.header {
+    grid-area: head;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+    padding: 10px;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    min-height: 100%;
+    
+}
+
+.grid {
+    height: 100%;
+}
+
+.grid div{
+
+    /* padding: 20px; */
+}
